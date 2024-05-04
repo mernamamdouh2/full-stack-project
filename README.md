@@ -14,8 +14,14 @@ Git Installation Clone the repository:
 
 # git clone (https://github.com/mernamamdouh2/full-stack-project.git)
 
+Running the Project Locally
+# Make sure you're in the project root directory
+To run the project locally, follow these steps:
+
 Setting Up the Backend
 Navigate to the backend directory:
+
+Start the Node.js backend:
 
 # cd Books-MS-Back
 
@@ -27,29 +33,30 @@ Migrate the database:
 
 # npm run migrate
 
-Running the Project Locally
-# Make sure you're in the project root directory
-To run the project locally, follow these steps:
+Run backend:
+
+# npm run start:dev
+
+The server will run on 
+
+# http://localhost:8000
+
 
 Start the React frontend:
 
 # cd Books-MS-Front
 
+Install frontend dependencies:
+
+# npm install
+
+Run frontend:
+
 # npm start
-
-Start the Node.js backend:
-
-# cd Books-MS-Back
-
-# npm run start:dev
-
-The server will run on 
-# http://localhost:8000.
 
 Open the application in your browser:
 
-Once both the frontend and backend servers are running, open your browser and go to
-# http://localhost:3000.
+# http://localhost:3000
 
 Database Migration
 To set up and migrate the database for the project, follow these steps:
