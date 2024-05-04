@@ -78,3 +78,17 @@ To run tests, execute the following command:
 # npm test
 
 This will launch the test runner in interactive watch mode.
+
+## Created By
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/mernamamdouh2">
+        <img src="https://avatars.githubusercontent.com/u/74082044?v=4" width="100px" alt="Fourth User">
+      </a>
+      <br>
+      <a href="https://github.com/mernamamdouh2">Merna Mamdouh</a>
+    </td>
+  </tr>
+</table>
