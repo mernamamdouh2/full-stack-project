@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "436030d7-ba0b-4002-8ec5-69d7b99a50f0",
+		"name": "Books-MS API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25200012"
+	},
+	"item": [
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "Create Specific Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Bella",
+									"type": "text"
+								},
+								{
+									"key": "author",
+									"value": "cotton-jacket1111",
+									"type": "text"
+								},
+								{
+									"key": "publishDate",
+									"value": "2024-10-10",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Hello",
+									"type": "text"
+								},
+								{
+									"key": "imageCover",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "PDFDownload",
+									"type": "file",
+									"src": "/C:/Users/Office/Downloads/Documents/ResumeWorded.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"books"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "Casual",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "publishDate",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/books/6630c8c87b13f9850ff1236e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"books",
+								"6630c8c87b13f9850ff1236e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Specific Book",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Geography2 Book\"\r\n    // \"author\": \"Merna\",\r\n    // \"publishDate\": \"4/25/2020\",\r\n    // \"description\": \"Science Book by Merna\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/books/6630c8c87b13f9850ff1236e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"books",
+								"6630c8c87b13f9850ff1236e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Specific Book",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/books/6630c8c87b13f9850ff1236e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"books",
+								"6630c8c87b13f9850ff1236e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
